@@ -1,0 +1,33 @@
+﻿@model UniversitySystem.Models.EnrollmentViewModel
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Register</h1>
+
+<hr />
+<div class="row">
+    <div class="col-12">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <p>Please, select a student ID:</p>
+                @Html.DropDownListFor(x => x.SelectedStudent, Model.Students, new { @class = "form-control" })
+                <p>Please, choose courses to enroll:</p>
+                @Html.ListBoxFor(x => x.SelectedCourses, Model.Courses, new { @class = "form-control" })
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Submit" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

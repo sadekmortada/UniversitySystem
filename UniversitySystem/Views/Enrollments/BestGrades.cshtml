@@ -1,0 +1,16 @@
+﻿@model IEnumerable<UniversitySystem.Models.Enrollment>
+
+@{
+    ViewData["Title"] = "BestGrades";
+}
+
+<h1>Best Grades are:</h1>
+
+<ul>
+    @foreach(var item in Model)
+    {
+        <li>
+            @Html.DisplayFor(ModelItem=>item.Grade)
+        </li>
+    }
+</ul>

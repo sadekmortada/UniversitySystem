@@ -1,0 +1,47 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Migrations\20200809164405_AddCourseToDb.cs" />
+    <Compile Remove="Migrations\20200809164405_AddCourseToDb.Designer.cs" />
+    <Compile Remove="Migrations\20200809164428_AddStudentToDb.cs" />
+    <Compile Remove="Migrations\20200809164428_AddStudentToDb.Designer.cs" />
+    <Compile Remove="Migrations\20200809164439_AddInstructorToDb.cs" />
+    <Compile Remove="Migrations\20200809164439_AddInstructorToDb.Designer.cs" />
+    <Compile Remove="Migrations\20200809164511_AddEnrollmentToDb.cs" />
+    <Compile Remove="Migrations\20200809164511_AddEnrollmentToDb.Designer.cs" />
+    <Compile Remove="Migrations\20200809164522_AddDepartmentToDb.cs" />
+    <Compile Remove="Migrations\20200809164522_AddDepartmentToDb.Designer.cs" />
+    <Compile Remove="Migrations\20200809164540_AddOfficeAssignmentToDb.cs" />
+    <Compile Remove="Migrations\20200809164540_AddOfficeAssignmentToDb.Designer.cs" />
+    <Compile Remove="Migrations\20200809170128_AddOfficeAssignmentToDb.cs" />
+    <Compile Remove="Migrations\20200809170128_AddOfficeAssignmentToDb.Designer.cs" />
+    <Compile Remove="Migrations\20200809171034_AddOfficeAssignmentToDb.cs" />
+    <Compile Remove="Migrations\20200809171034_AddOfficeAssignmentToDb.Designer.cs" />
+    <Compile Remove="Migrations\20200809171401_AddOfficeAssignmentToDb.cs" />
+    <Compile Remove="Migrations\20200809171401_AddOfficeAssignmentToDb.Designer.cs" />
+    <Compile Remove="Migrations\20200809171558_AddCourseToDb.cs" />
+    <Compile Remove="Migrations\20200809171558_AddCourseToDb.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="3.1.6" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.6" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="3.1.6">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Proxies" Version="3.1.6" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="3.1.6" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.6" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.6">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.4" />
+  </ItemGroup>
+
+</Project>
